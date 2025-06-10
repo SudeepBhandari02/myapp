@@ -7,5 +7,5 @@
         msg: "Hello, this is a basic setup"
     - name: Copy the artifact to the deployment directory
       copy:
-        src: "{{ lookup('env','WORKSPACE') }}/target/MavenApp-1.0-SNAPSHOT.jar"
-        dest: "/opt/deployment/MavenApp.jar"
+        src: "{{ lookup('env','WORKSPACE') }}/target/myapp-1.0-SNAPSHOT.jar"
+        dest: "/opt/deployment/myapp.jar"
